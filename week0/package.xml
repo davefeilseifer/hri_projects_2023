@@ -8,11 +8,10 @@
   <license>GPLv3</license>
 
 
-  <url type="website">https://github.com/RoboticsResearchLab/hri_projects_2023/week0</url> 
+  <url type="website">https://github.com/davefeilseifer/hri_projects_2023/tree/main/week0</url> 
 
 
   <author email="dave@cse.unr.edu">David Feil-Seifer</author> -->
-
 
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>roscpp</build_depend>
