@@ -40,15 +40,56 @@ From the command-line and have it output some messages. Then try running the lis
 rosrun week0 listener.py
 ```
 
+### make some changes
 
+Take some time to play with these a bit:
+
+* What happens when you close one or the other?
+* What happens when you close the core node?
+* What happens when you change the rate for the talker?
+  * default is 10
+  * rate = 1
+  * rate = 100
+  * rate = 100000
+  * rate = 0.1
+  * rate = 0.001
+* What happens when you start 2 talker nodes?
+* What happens when you start 2 listener nodes?
 
 ## customize an HRI message
 
 Look at this tutorial for creating your own message type: https://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv
 
+Let's create a new message type for a person that we want to keep track of:
+
+```
+float64 x
+float64 y
+float64 z
+```
+
+Let's modify our talker and listener scripts to use this new message. 
 
 
 ## commit changes back to your repository
+
+you want to add any new files with:
+
+```
+git add <filename>
+```
+
+You can also see what has changed using the command:
+
+```
+git status
+```
+
+
+```
+git commit -m 'INSERT MEMO HERE'
+```
+
 
 ## push changes to github
 

@@ -100,6 +100,19 @@ if you've gotten to the directory: ~/hri2023/src/hri_projects_2023/week0
 Each project week will have a readme file with instructions for the week, navigate to the week1 directory on github to see the instruction for the week.
 
 If you get lost, the direct link is: https://github.com/davefeilseifer/hri_projects_2023/tree/main/week0
-## making some mistakes
 
 ## committing a change to your repository
+
+when you're done try commiting to the repo:
+
+you want to add any new files with:
+
+```
+git add <filename>
+```
+
+
+```
+git commit -m 'INSERT MEMO HERE'
+git push
+```
