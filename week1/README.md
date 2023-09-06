@@ -1,5 +1,12 @@
 # Week1 Tutorial
 
+Major deliverables this week:
+
+- Get familiar with the stage simulator
+- Issue some robot commands for stage
+- Practice a ROS connection from one computer to another
+- Use a sensor
+
 ## How this package was created
 
 ```
