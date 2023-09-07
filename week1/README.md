@@ -69,10 +69,10 @@ rosmsg show geometry_msgs/Twist
 
 If we change linear.x, then we can make the robot move forward and backward. If you change angular.z, you can make the robot turn.
 
-- Goal 2: Write a node to make the robot move:
--- In a square
--- In a figure-eight
--- In a triangle
+- Goal 2: Write some nodes to make the robot move:
+	- In a square
+	- In a figure-eight
+	- In a triangle
 
 
 ### Obstacle avoidance
