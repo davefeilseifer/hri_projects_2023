@@ -81,5 +81,5 @@ define erratic position
 )
 
 # throw in a robot
-erratic( pose [ 2.277 5.266 0.000 180.000 ] name "pioneer" )
-block( pose [ -2.924 3.020 0.000 180.000 ] color "blue")
+erratic( pose [ 1.93 8.12 0.000 180.000 ] name "pioneer" )
+block( pose [ -3.02 -8.88 0.000 180.000 ] color "blue")
