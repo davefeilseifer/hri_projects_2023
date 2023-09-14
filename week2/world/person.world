@@ -5,7 +5,7 @@ include "map.inc"
 # time to pause (in GUI mode) or quit (in headless mode (-g)) the simulation
 quit_time 3600 # 1 hour of simulated time
 
-paused 1
+paused 0
 
 resolution 0.02
 
@@ -14,8 +14,8 @@ window
 (
   size [ 635 666 ] # in pixels
   scale 36.995   # pixels per meter
-  center [ -5.457  -2.944 ]
-  rotate [ 0.000  1.500 ]
+  center [ -0.170  -0.372 ]
+  rotate [ 0.000  0.000 ]
         
   show_data 1              # 1=on 0=off
 )
@@ -23,10 +23,10 @@ window
 # load an environment bitmap
 floorplan
 ( 
-  name "cave"
-  size [16.000 16.000 0.800]
-  pose [0.000 0.000 0.000 0.000]
-  bitmap "cave.png"
+  name "room"
+  bitmap "basic_map.pgm"
+  size [35.000 35.00 0.500]
+   pose [ 0. 0.000 0.000 90.000 ]
 )
 
 
@@ -34,7 +34,7 @@ define topurg ranger
 (
   sensor(       
     range [ 0.0  10.0 ]
-    fov 270.25
+    fov 180.25
    samples 1081
   )
 
@@ -57,7 +57,7 @@ define erratic position
 )
 
 # throw in a robot
-erratic( pose [ 1.065 2.768 0.000 180.000 ] name "pioneer" )
+erratic( pose [ -2.233 -3.855 0.000 180.000 ] name "pioneer" )
 #block( pose [ -3.02 -8.88 0.000 180.000 ] color "green")
 
 
@@ -67,6 +67,8 @@ person
   # can refer to the robot by this name
   name "r0"
   pose [ -4.672 -5.268 0.000 -31.386 ] 
+
+
 
   # report error-free position in world coordinates
   localization "gps"
