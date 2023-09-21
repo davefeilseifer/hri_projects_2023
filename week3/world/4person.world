@@ -14,7 +14,7 @@ window
 (
   size [ 1019 1059 ] # in pixels
   scale 33.632   # pixels per meter
-  center [ 0.401  1.831 ]
+  center [ 2.690  3.288 ]
   rotate [ 0.000  0.000 ]
         
   show_data 1              # 1=on 0=off
@@ -33,8 +33,8 @@ floorplan
 define topurg ranger
 (
   sensor(       
-    range [ 0.0  10.0 ]
-    fov 180.25
+    range [ 0.0  30.0 ]
+    fov 270.25
    samples 1081
   )
 
@@ -57,20 +57,11 @@ define erratic position
 )
 
 # throw in a robot
-erratic( pose [ -4.203 -6.404 0.000 -176.172 ] name "pioneer" )
+erratic( pose [ -6.819 5.013 0.000 149.450 ] name "pioneer" )
 #block( pose [ -3.02 -8.88 0.000 180.000 ] color "green")
 
 
 
-person
-(     
-  # can refer to the robot by this name
-  name "r0"
-  pose [ -7.164 -7.991 0.000 -31.386 ] 
-
-
-
-  # report error-free position in world coordinates
-  localization "gps"
-  localization_origin [ 0 0 0 0 ]
-)
+person ( name "r0" pose [ -8.770 9.909 0.000 88.935 ] localization "gps" localization_origin [ 0 0 0 0 ] )
+person ( name "r1" pose [ -7.088 11.276 0.000 -2.738 ] localization "gps" localization_origin [ 0 0 0 0 ] )
+person ( name "r2" pose [ -5.421 9.909 0.000 -88.682 ] localization "gps" localization_origin [ 0 0 0 0 ] )
