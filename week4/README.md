@@ -25,7 +25,7 @@ Your node should also be publishing a frame with the center of the line or the c
 
 We will assume that crowds that are in a line move from 0-1 m/s, and that circles stay put. We want to create some social navigation scenarios and play with them.
 
-* Hint: using TF2 here might help you out with the navigation goals 
+*Hint: using TF2 here might help you out with the navigation goals*
 
 ### Scenario 1: Circle
 
